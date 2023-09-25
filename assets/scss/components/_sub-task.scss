@@ -1,0 +1,19 @@
+.sub-task-container{
+    max-width: 281px;
+    figure{
+        img{
+            right: 12px;
+            top: 12px;
+        }
+    }
+    .profile{
+        img{
+            border-radius: 100%;
+        }
+    }
+    form{
+        input:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+}

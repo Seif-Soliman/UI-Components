@@ -1,0 +1,32 @@
+.card-creation{
+    max-width: 348px;
+    i{
+        img{
+            right: -340px;
+            top: 12px;
+        }
+        .circle{
+            right: -6px;
+            top: -2px;
+            z-index: -1;
+        }
+    }
+    form{
+        border-radius: 8px;
+        border: 1px solid #7784EE;
+        background: #FFF;
+        box-shadow: 0px 5px 15px 0px rgba(119, 132, 238, 0.30);
+        max-width: 292px;
+        height: 100%;
+        textarea{
+            width: 92%;
+            height: 150px;
+            border: 0px;
+        }
+    }
+    .profile{
+        img{
+            border-radius: 100%;
+        }
+    }
+}

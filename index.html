@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\main.css">
+    <script src="assets\js\utils.js" defer></script>
+    <title>Task Components</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-container default-font flex flex-row width-10 margin-center align-items-center">
+            <span class="font-size-12-25 margin-center text-center spacing-3 font-bold">T</span>
+            <p class="width-1 margin-center text-left font-size-12 t8-color font-bold">TASK</p>
+            <form action="get" class="width-6 spacing-3-mr">
+                <input class="width-12 font-size-12" type="search" placeholder="Search everything"/>
+            </form>
+            <ul class="flex flex-row width-4 font-size-13">
+                <li class=" margin-center text-center width-4 t8-color font-bold">Projects</li>
+                <li class=" margin-center text-center width-4">Settings</li>
+                <li class=" margin-center text-center width-4">Help</li>
+            </ul>
+        </nav>
+    </header> 
+    
+    <main>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <section class="file-attachment-container bg-t4-color card margin-center width-7 t1-color">
+            <h1 class="font-size-15 width-10 margin-center spacing-1-t spacing-1-b">File Attachment</h1>
+            <div class="file width-10 margin-center">
+                <div class="flex flex-row">
+                    <figure class="width-2 relative">
+                        <img src="assets\images\Files\red.svg" alt="PDF" class="block"/>
+                        <img src="assets\images\Files\red-2.svg" alt="PDF" class="absolute"/>
+                        <p class="absolute font-size-10 t4-color">PDF</p>
+                    </figure>
+                    <div class="width-10">
+                        <div class="flex flex-row">
+                            <h2 class="font-size-13 width-6">User-Journey.pdf</h2>
+                            <h2 class="font-size-12 width-3">4.5MB</h2>
+                            <h2 class="font-size-12 text-right width-3 t3-color">Cancel</h2>
+                        </div>
+                        <div class="progress-bar flex bg-t8-2-color spacing-2-mt border-radius-2">
+                            <hr class="bg-t8-color"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file width-10 margin-center spacing-1-b spacing-4-t">
+                <div class="flex flex-row">
+                    <figure class="width-2 relative">
+                        <img src="assets\images\Files\green.svg" alt="XLS"/>
+                        <img src="assets\images\Files\green-2.svg" alt="XLS" class="absolute"/>
+                        <p class="absolute font-size-10 t4-color">XLS</p>
+                    </figure>
+                    <div class="width-10">
+                        <div class="flex flex-row">
+                            <h2 class="font-size-13 width-6">Data-Structure.xls</h2>
+                            <h2 class="font-size-12 width-3">12.4 MB</h2>
+                            <h2 class="font-size-12 text-right t2-color width-3">Download</h2>
+                        </div>
+                        <h2 class="font-size-11 spacing-3-mt t3-color">Angela Hope</h2>
+                    </div>
+                </div>
+            </div> 
+        </section>
+    
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+
+        <section class="card-creation card margin-center">
+            <i class="relative">
+                <img src="assets\images\card-create\menu-close-small.svg" class="absolute" alt=""/>
+            </i>
+            <div class="width-10 margin-center">
+                <p class="spacing-1-t spacing-8-b font-size-15">Create New Card</p>
+                <form  action="">
+                    <textarea class="spacing-3 font-size-13" name="" id="" cols="30" rows="10" placeholder="What is the task?"></textarea>
+                </form>
+
+                <div class="spacing-2-t spacing-1-b">
+                    <div class>
+                      <div class="flex flex-row width-12">
+                        <figure>
+                          <img class src="assets\images\card-create\basic-tag.svg" alt="Tag"/>
+                        </figure>
+                        <p class="category spacing-8-ml spacing-3 font-size-12">UI Design</p>
+                        <p class="text-right flex-grow font-size-14 t32-color relative">
+                            +
+                            <i>
+                                <img class="circle absolute" src="assets\images\card-create\Rectangle 2 Copy 6.svg" alt=""/>
+                            </i>
+                        </p>
+                      </div>
+                      <hr class="spacing-6-mt spacing-7-mb"/>
+                      <div class="flex flex-row">
+                        <figure>
+                          <img class="spacing-3-mt"
+                            src="assets\images\card-create\group-218.svg" alt="Group"/>
+                        </figure>
+                        <figure class="profile">
+                          <img class="spacing-8-ml"
+                            src="assets\images\card-create\image-1.png" alt="Profile"/>
+                        </figure>
+                        <p class="spacing-8-ml spacing-3-mt font-size-13">Samantha</p>
+                        <p class="text-right flex-grow font-size-14 t32-color relative">
+                            +
+                            <i>
+                                <img class="circle absolute" src="assets\images\card-create\Rectangle 2 Copy 6.svg" alt=""/>
+                            </i>
+                        </p>
+                      </div>
+                    </div>
+                    <button class="btn spacing-4-mt">
+                        Done
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        
+        <section class="task-card-container card t1-color width-4 margin-center">
+            <figure class="relative">
+                <img class="absolute" src="assets\images\task-card\group-87.svg" alt="Menu"/>
+            </figure>
+            <div class="flex flex-col margin-center width-10">
+                <p class="category spacing-3 spacing-8-mt width-3 text-center">Illustration</p>
+                <p class="font-size-13 spacing-8-mt">Membuat konsep ilustrasi untuk halaman homepage dan about us</p>
+            </div>
+            <div class="flex flex-row spacing-8-mt width-10 margin-center">
+                <i>
+                    <img src="assets\images\task-card\Group 221.svg" alt="Flag"/>
+                </i>
+                <p class="font-size-12 t1-color">Nov 24</p>
+                <i class="spacing-2-ml">
+                    <img src="assets\images\task-card\Group 222.svg" alt="Flag"/>
+                </i>
+                <p class="font-size-12 t1-color">2</p>
+                <figure class="flex-grow text-right">
+                    <img class="profile" src="assets\images\task-card\image 2.png" alt="Profile"/>
+                </figure>
+            </div>
+        </section> 
+
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <section class="label-card-container card t1-color width-4 margin-center">  
+            <figure class="relative">
+                <img class="absolute" src="assets\images\label-card\group-87.svg" alt="Menu"/>
+            </figure>
+            <div class="margin-center width-12">
+                <p class="font-size-15 spacing-1 spacing-8-mt width-10 margin-center text-left">Labels</p>
+                <div class="flex flex-col width-10 margin-center">
+                    <div class="flex flex-row width-12">
+                        <figure>
+                            <img src="assets\images\label-card\basic-tag.svg" alt="Tag"/>
+                        </figure>
+                        <p class="flex-grow spacing-3-ml"><label for="c1">Copywriting</label></p>
+                        <form action="" class="flex flex-row relative" method="post">
+                            <input class="absolute mod_input" type="checkbox" id="c1">
+                            <span class="checkmark absolute"></span>
+                        </form>
+                    </div>
+                    <hr class="spacing-8-mt spacing-8-mb">
+                    <div class="flex flex-row width-12">
+                        <figure>
+                            <img src="assets\images\label-card\basic-tag.svg" alt="Tag">
+                        </figure>
+                        <p class="flex-grow spacing-3-ml"><label for="c2">UI Design</label></p>
+                        <form action="" class="flex flex-row relative" method="post">
+                            <input class="absolute mod_input" type="checkbox" id="c2">
+                            <span class="checkmark absolute"></span>
+                        </form>
+                    </div>
+                    <hr class="spacing-8-mt spacing-8-mb">
+                    <div class="flex flex-row width-12 spacing-2-mb">
+                        <figure>
+                            <img src="assets\images\label-card\basic-tag.svg" alt="Tag">
+                        </figure>
+                        <p class="flex-grow spacing-3-ml"><label for="c3">Illustrations</label></p>
+                        <form action="" class="flex flex-row relative" method="post">
+                            <input class="absolute mod_input" type="checkbox" id="c3">
+                            <span class="checkmark absolute"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+
+        <section class="buttons-container width-3 margin-center">
+            <button class="btn spacing-6-mb margin-center">
+                Normal Button
+            </button>
+            <button class="btn-loading spacing-6-mb margin-center">
+                <div class="flex flex-row">
+                    <figure class="spacing-11-r">
+                        <img src="assets\images\buttons\group-197.svg" alt="loading/">
+                    </figure>
+                    <p class="">Loading Button</p>
+                </div>
+            </button>
+            <button class="btn-secondary margin-center">
+                Secondary Button
+            </button>
+        </section>
+    
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        
+        <section class="project-card-container card t1-color width-4 margin-center">
+            <figure class="relative">
+                <img class="absolute" src="assets\images\task-card\group-87.svg" alt="Menu">
+            </figure>
+            <div class="flex flex-col margin-center width-10">
+                <p class="font-size-18 spacing-8-mt width-12 text-left flex-grow">Konsep design homepage</p>
+                <div class="flex flex-row spacing-12-mt width-10 ">
+                    <i>
+                        <img src="assets\images\project-card\Group 221.svg" alt="Flag">
+                    </i>
+                    <p class="font-size-12 ">Due Nov 24</p>
+                </div>
+                <p class="font-size-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>   
+                <div class="flex flex-row spacing-13-mt">
+                    <p class="font-size-13 flex-grow text-left">Project Progress</p>
+                    <p class="font-size-13 flex-grow text-right">32%</p>
+                </div>
+                <div class="flex flex-col prog_bar bg-t14-2-color spacing-11-mt">
+                    <hr class="t14-color">
+                </div>
+                <div class="profile-pics flex flex-row spacing-2-mt spacing-2-mb">
+                    <figure class="relative width-4">
+                        <img src="assets\images\project-card\image 3.png" alt="">
+                        <img class="img1 absolute" src="assets\images\project-card\image 1.png" alt="">
+                        <img class="img2 absolute" src="assets\images\project-card\image 2.png" alt="">
+                    </figure>
+                    <p class="font-size-12 flex flex-grow align-items-center flex-wrap">+ 15 people</p>
+                    <p>ADD</p>
+                </div>
+            </div>                                                   
+        </section>
+
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <section class="task-progress-container card margin-center">
+            <div class="flex flex-col width-10 margin-center">
+                <p class="font-size-15 spacing-8-mt ">Task Progress</p>
+                <div class="flex flex-col spacing-7-mt">
+                    <div class="flex flex-row spacing-3-mb">
+                        <p class="font-size-12 flex-grow">Copywriting</p>
+                        <p class="font-size-12 flex-grow text-right">3/8</p>
+                    </div>
+                    <div class="prog_bar bg-t15-2-color spacing-2-mb">
+                        <hr class="p1 t15-color">
+                    </div>
+                    <div class="flex flex-row spacing-3-mb">
+                        <p class="font-size-12 flex-grow">Illustrations</p>
+                        <p class="font-size-12 flex-grow text-right">6/10</p>
+                    </div>
+                    <div class="prog_bar bg-t14-2-color spacing-2-mb">
+                        <hr class="p2 t14-color">
+                    </div>
+                    <div class="flex flex-row spacing-3-mb">
+                        <p class="font-size-12 flex-grow">UI Design</p>
+                        <p class="font-size-12 flex-grow text-right">2/7</p>
+                    </div>
+                    <div class="prog_bar bg-t8-2-color spacing-10-mb">
+                        <hr class="p3 t8-color">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <section class="sub-task-container card  t1-color width-4 margin-center">
+            <figure class="relative">
+                <img class="absolute" src="assets\images\label-card\group-87.svg" alt="Menu">
+            </figure>
+            <div class="margin-center width-12">
+                <p class="font-size-15 spacing-1 spacing-8-mt width-10 margin-center text-left">Task</p>
+                <div class="flex flex-col width-10 margin-center">
+                    <div class="flex flex-row-rev width-12 margin-center">
+                        <figure class="profile">
+                            <img src="assets\images\sub-task\image 3.png" alt="profile">
+                        </figure>
+                        <div class="flex flex-col flex-grow spacing-8-ml">
+                            <p class="flex-grow font-size-13"><label for="c4">Design Homepage</label></p>
+                            <p class="font-size-12">Thu, Nov 23</p>
+                        </div>
+                        <form action="" class="flex flex-row relative spacing-18-ml" method="post">
+                            <input class="absolute mod_input" type="checkbox" id="c4"/>
+                            <span class="checkmark absolute"></span>
+                        </form>
+                    </div>
+                    <hr class="spacing-8-mt spacing-8-mb">
+                    <div class="flex flex-row-rev width-12">
+                        <figure class="profile">
+                            <img src="assets\images\sub-task\image 2.png" alt="profile">
+                        </figure>
+                        <div class="flex flex-col flex-grow">
+                            <p class="flex-grow font-size-13 spacing-19-ml"><label for="c5">Sketsa Ilustrasi</label></p>
+                            <p class="font-size-12 spacing-19-ml">Thu, Nov 23</p>
+                        </div>
+                        <form action="" class="flex flex-row relative spacing-18-ml" method="post">
+                            <input class="absolute mod_input" type="checkbox" id="c5">
+                            <span class="checkmark absolute"></span>
+                        </form>
+                    </div>
+                    <hr class="spacing-8-mt spacing-8-mb">
+                    <div class="flex flex-row-rev width-12 spacing-1-mb">
+                        <figure class="profile">
+                            <img src="assets\images\sub-task\image 1.png" alt="profile">
+                        </figure>
+                        <div class="flex flex-col flex-grow spacing-8-ml">
+                            <p class="flex-grow font-size-13"><label for="c6">Onboarding Design</label></p>
+                            <p class="font-size-12">Wed, Nov 15</p>
+                        </div>
+                        <form action="" class="flex flex-row relative spacing-18-ml" method="post">
+                            <input class="absolute mod_input" type="checkbox" id="c6">
+                            <span class="checkmark absolute"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <section class="status-container alert default-font margin-center">
+            <div class="alert flex flex-row width-11 margin-center spacing-13 bg-t18-color spacing-8-mb">
+                <span class="text-center font-size-15 bg-t16-color t4-color">!</span>
+                <div class="flex flex-col flex-grow spacing-13-ml">
+                    <p class="font-size-13 flex-grow t16-color">Someting wrong</p>
+                    <p class="font-size-11 flex-grow t17-color">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="attention flex flex-row width-11 margin-center spacing-13 bg-t22-color spacing-8-mb">
+                <span class="text-center font-size-15 bg-t20-color t4-color">i</span>
+                <div class="flex flex-col flex-grow spacing-13-ml">
+                    <p class="font-size-13 flex-grow t19-color">Need Attention</p>
+                    <p class="font-size-11 flex-grow t21-color">Adipiscing elit, sed do eiusmod</p>
+                </div>
+            </div>
+            <div class="success flex flex-row width-11 margin-center spacing-13 bg-t24-color spacing-8-mb">
+                <i>
+                    <img src="assets\images\status\Group 105.svg" alt="">
+                </i>
+                <div class="flex flex-col flex-grow spacing-13-ml">
+                    <p class="font-size-13 flex-grow t25-color">Success</p>
+                    <p class="font-size-11 flex-grow t26-color">consectetur adipiscing elit sed</p>
+                </div>
+            </div>
+            <div class="other flex flex-row width-11 margin-center spacing-13 bg-t28-color">
+                <i>
+                    <img src="assets\images\status\Group 106.svg" alt="">
+                </i>
+                <div class="flex flex-col flex-grow spacing-13-ml">
+                    <p class="font-size-13 flex-grow t8-color">Other Condition</p>
+                    <p class="font-size-11 flex-grow t27-color">consectetur adipiscing elit sed</p>
+                </div>
+            </div>
+        </section>
+    
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <section class="activity-container card margin-center t1-color">
+            <div class="flex flex-col width-10 margin-center">
+                <p class="font-size-16 spacing-1-mt spacing-1-mb">Recent Activity</p>
+                <div class="flex flex-row spacing-1-mb">
+                    <figure>
+                        <img src="assets\images\activity\Group 7.svg" alt="Message">
+                    </figure>
+                    <div class="flex flex-col spacing-11-l">
+                        <p class="font-size-12 t29-color spacing-3-mb"><span class="font-bold">Karen</span> leave some comments on Konsep Ilustrasi</p>
+                        <p class="font-size-12 t29-color">Aug 10</p>
+                    </div>
+                </div>
+                <div class="flex flex-row spacing-1-mb">
+                    <figure>
+                        <img src="assets\images\activity\Group 6.svg" alt="Message">
+                    </figure>
+                    <div class="flex flex-col spacing-11-l">
+                        <p class="font-size-12 t29-color spacing-3-mb"><span class="font-bold">Karen</span> change project info on Project Homepage</p>
+                        <p class="font-size-12 t29-color">Aug 10</p>
+                    </div>
+                </div>
+                <div class="flex flex-row spacing-1-mb">
+                    <figure>
+                        <img src="assets\images\activity\Group 5.svg" alt="Message">
+                    </figure>
+                    <div class="flex flex-col spacing-11-l">
+                        <p class="font-size-12 t29-color spacing-3-mb"><span class="font-bold">Andrea</span> change the due date of Project Homepage</p>
+                        <p class="font-size-12 t29-color">Aug 10</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <section class="progress-container card margin-center t1-color">
+            <div class="flex flex-col width-10 margin-center">
+                <i class="relative">
+                    <img class="absolute" src="assets\images\progress\Group 87.svg" alt="">
+                </i>
+                <p class="font-size-15 spacing-1-mt">Weekly Progress</p>
+                <p class="font-size-12 t29-color spacing-11-mt">Start from Nov 7-14, 2020</p>
+                <div class="main spacing-15-mb spacing-13-mt">
+                    <div class="circular-progress-bar spacing-1-mt">
+                        <div class="outer">
+                            <div id="num" class="absolute font-size-32 t30-color"></div>
+                            <p class="font-size-12 spacing-14-mt">Tasks Completed</p>           
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                               <linearGradient id="LinearColor">
+                                  <stop offset="0%" stop-color="#46BD84" />
+                                  <stop offset="100%" stop-color="#46BD84" />
+                               </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <section >
+            <div class="assign-to-container width-4 margin-center t1-color">
+                <div class="flex flex-row spacing-13-l spacing-5-mb margin-center">
+                    <i class="spacing-2-t spacing-2-b">
+                        <img src="assets\images\assign-to\Vector.svg" alt="add-person">
+                    </i>
+                    <p class="spacing-13-l spacing-13-t">Assign task to</p>
+                    <i  id="dropdown-arrow" class="flex-grow text-right spacing-13">
+                        <img src="assets\images\assign-to\chevron_down.svg" alt="add-person">
+                    </i>
+                </div>
+            </div>
+        
+
+            <div id="dropdown-list" class="drop card flex flex-col width-4 margin-center none relative">
+                <div class="arrow-up absolute"></div>
+                <form method="get" class="width-10 margin-center spacing-8-mb spacing-5-mt relative">
+                    <i>
+                        <img src="assets\images\assign-to\Group 2.svg" alt="">
+                    </i>
+                    <input type="search" class="font-size-12 width-12 margin-center absolute" placeholder="Search">
+                </form>
+                <div class="flex flex-row spacing-8-t spacing-8-b spacing-17-l spacing-17-r">
+                    <figure class="width-2">
+                        <img src="assets\images\assign-to\image 3.png" alt="">
+                    </figure>
+                    <p class="font-size-13 flex align-items-center flex-grow">Angela Smith</p>
+                    <p class="font-size-12 flex align-items-center">16 task on progress</p>
+                </div>
+                <div class="flex flex-row spacing-8-t spacing-8-b spacing-17-l spacing-17-r">
+                    <figure class="width-2">
+                        <img src="assets\images\assign-to\image 2.png" alt="">
+                    </figure>
+                    <p class="font-size-13 flex align-items-center flex-grow">Karen William</p>
+                    <p class="font-size-12 flex align-items-center">25 task on progress</p>
+                </div>
+                <div class="flex flex-row spacing-8-t spacing-8-b spacing-17-l spacing-17-r">
+                    <figure class="width-2">
+                        <img src="assets\images\assign-to\image 1.png" alt="">
+                    </figure>
+                    <p class="font-size-13 flex align-items-center flex-grow">Samantha William</p>
+                    <p class="font-size-12 flex align-items-center">35 task on progress</p>
+                </div>
+                <div class="flex flex-row spacing-8-t spacing-8-b spacing-17-l spacing-17-r">
+                    <figure class="width-2">
+                        <img src="assets\images\assign-to\image 4.png" alt="">
+                    </figure>
+                    <p class="font-size-13 flex align-items-center flex-grow">Andy Hope</p>
+                    <p class="font-size-12 flex align-items-center">12 task on progress</p>
+                </div>
+            </div>
+         </section>
+        
+
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+.project-card-container{
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    max-width: 408px;
+    figure{
+        img{
+            right: toRem(12px);
+            top: toRem(12px);
+        }
+    }
+    .profile-pics{
+        figure{
+            img{
+                border-radius: 100%;
+                border: 3px solid $t4-color;
+            }
+            .img1{
+                left: 25px;
+                top: 0;
+                z-index: -1;
+            }
+            .img2{
+                left: 50px;
+                top: 0;
+                z-index: -12;
+            }
+        }
+    }
+}

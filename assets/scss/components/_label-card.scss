@@ -1,0 +1,14 @@
+.label-card-container{
+    max-width: 348px;
+    figure{
+        img{
+            right: 12px;
+            top: 12px;
+        }
+    }
+    form{
+        input:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+}

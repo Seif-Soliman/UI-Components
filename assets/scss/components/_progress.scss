@@ -1,0 +1,53 @@
+.progress-container{
+    max-width: 319px;
+    max-height: 340px;
+    i{
+        img{
+            top: toRem(40px);
+            right: toRem(-3.8px);
+        }
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        .circular-progress-bar{
+            width: 160px;
+            height: 160px;
+            position: relative;
+            .outer{
+                width: 135px;
+                height: 135px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 5px solid $t14-2-color;
+                position: relative;    
+            }
+            svg{
+                position: absolute;
+                top: -7px;
+                left: -6px;
+                transform: rotate(90deg);
+                circle{
+                    padding: 20px;
+                    fill: none;
+                    stroke: url(#LinearColor);
+                    stroke-width: 5px;
+                    stroke-dasharray: 472;
+                    stroke-dashoffset: 472;
+                    animation: anim 2s linear forwards;
+                }
+                @keyframes anim {
+                    100%{
+                        stroke-dashoffset: 140;
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}

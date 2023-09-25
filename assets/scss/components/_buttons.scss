@@ -1,0 +1,12 @@
+.buttons-container{
+    .btn-loading{
+        @include basic_btn;
+        color: $t11-color;
+        background-color: $t12-color;
+    }
+    .btn-secondary{
+        @include basic_btn;
+        color: $t11-color;
+        background-color: $t13-color;
+    }
+}

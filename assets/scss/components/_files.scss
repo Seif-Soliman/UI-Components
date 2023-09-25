@@ -1,0 +1,21 @@
+.file-attachment-container{
+    max-width: 408px;
+    figure{
+        p{
+            bottom: 15%;
+            left: 5%;
+        }
+        img{
+            left: 20px;
+            top: 0;
+        }
+    }
+    .progress-bar{
+        border-radius: $border-radius-2;
+        hr{
+            border-radius: $border-radius-2;
+            border: 5px solid $t8-color;
+            width: 50%;
+        }
+    }
+}

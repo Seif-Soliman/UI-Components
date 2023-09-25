@@ -1,0 +1,25 @@
+.status-container{
+    .alert{
+        border: 0.5px solid $t16-color;
+        span{
+        width: toRem(28px);
+        height: toRem(28px);
+        border-radius: 100%;
+        }
+    }
+    .attention{
+        border: 0.5px solid $t20-color;
+        span{
+        width: toRem(28px);
+        height: toRem(28px);
+        border-radius: 100%;
+        }
+    }
+    .success{
+        border: 0.5px solid $t23-color;
+    }
+    .other{
+        border: 0.5px solid $t8-color;
+    }
+    
+}

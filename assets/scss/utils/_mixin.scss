@@ -1,0 +1,117 @@
+@mixin base_card{
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    font-family: $default-font;
+    width: 100%
+}
+
+.card{
+    @include base_card;
+}
+
+@mixin basic_category{
+    border-radius: $border-radius-2;
+    background: $t8-2-color;
+    color: $t10-color;
+    font-size: $font-size-12;
+}
+
+.category{
+    @include basic_category;
+}
+
+@mixin basic_btn{
+    width: 100%;
+    max-width: 281px;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border-radius;
+    display: flex;
+    font-family: $default-font;
+    font-size: $font-size-14;
+    color: $t4-color;
+    background-color: $t2-color;
+    border: 0;
+}
+
+.btn{
+    @include basic_btn;
+}
+
+@mixin progress_bar{
+    width: 100%;
+    border-radius: $border-radius-2;
+    hr{
+        border-radius: $border-radius-2;
+        border: 5px solid;
+        width: 50%;
+    }
+}
+
+.prog_bar{
+    @include progress_bar;
+}
+
+@mixin base_checkmark{
+        top: 2px;
+        right: 0px;
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        border: 1px solid;
+        border-color:  $t8-color;
+        background: $t8-3-color;
+        &:after{
+            content: "";
+            position: absolute;
+            display: none;
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    
+}
+
+.checkmark{
+    @include base_checkmark;
+}
+
+.checkmark-2{
+    left: 0;
+    &:after{
+        right: 0;
+    }
+    @include base_checkmark;
+}
+
+@mixin base_input{
+    opacity: $opacity-2;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked ~ .checkmark {
+                background-color: $t8-color;
+            }
+}
+
+.mod_input{
+    @include base_input;
+}
+
+@mixin base_notify{
+    width: 100%;
+    max-width: 408px;
+    border-radius: $border-radius;
+    box-shadow: 0px 2px 1px 0px rgba(64, 72, 82, 0.05);
+}
+
+.alert, .attention, .success, .other{
+    @include base_notify;
+}

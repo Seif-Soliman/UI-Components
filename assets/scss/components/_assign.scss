@@ -1,0 +1,43 @@
+.assign-to-container{
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    font-family: $default-font;
+    max-width: 408px;
+}
+form{
+    background-color: $t9-color;
+    border-radius: $border-radius-2;
+    height: 2rem;
+    input{
+        border: 0; 
+        height: 2rem;
+        background: url(/assets/images/assign-to/Group2.svg) no-repeat scroll 7px 9px;
+        padding-left: $spacing-4;
+        border-radius: $border-radius-2;
+        }
+}
+.drop{
+    .arrow-up {
+        width: 0; 
+        height: 0; 
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid rgba(255, 255, 255, 0.30);
+        right: 19px;
+        top: -9px;
+    
+      }
+    max-width: 408px;
+    figure{
+        img{
+            border-radius: 100%;
+        }
+    } 
+    div{
+        &:hover{
+        background-color: $t31-color;
+        border-left-color: #08A0F7 !important;
+        }
+    }
+    
+}

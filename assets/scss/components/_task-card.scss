@@ -1,0 +1,16 @@
+.task-card-container{
+    max-width: 348px;
+    figure{
+        img{
+            right: toRem(12px);
+            top: toRem(12px);
+        }
+    }
+    div{
+        figure{
+            .profile{
+                border-radius: 100%;
+            }
+        }
+    }
+}
